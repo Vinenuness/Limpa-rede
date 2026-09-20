@@ -3,7 +3,8 @@ setlocal
 title Limpa Rede
 color 0A
 
-set "APP=%~dp0dist\LimpaRede.exe"
+set "APP=%~dp0LimpaRede.exe"
+if not exist "%APP%" set "APP=%~dp0dist\LimpaRede.exe"
 set "SCRIPT=%~dp0limpa_rede.py"
 
 echo ====================================================

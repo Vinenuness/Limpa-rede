@@ -53,15 +53,11 @@ pyinstaller --onefile --name LimpaRede limpa_rede.py
 
 O executavel sera criado em `dist\LimpaRede.exe`. O PyInstaller gera binarios para o sistema em que o build e executado.
 
-## Publicar no GitHub
+## Baixar e usar
 
-```bash
-git init
-git add limpa_rede.py "limpa rede.bat" LimpaRede.spec README.md .gitignore
-git commit -m "Cria ferramenta Windows de diagnostico de rede"
-git branch -M main
-git remote add origin URL_DO_REPOSITORIO
-git push -u origin main
-```
+1. Baixe o arquivo `LimpaRede-Windows.zip` na secao **Releases**.
+2. Extraia o arquivo em uma pasta.
+3. Execute `limpa rede.bat` como administrador.
+4. Escolha `1` para diagnosticar ou `2` para simular um reparo.
 
-Nao inclua logs, backups do `hosts` ou executaveis gerados no repositorio.
+O codigo-fonte e os arquivos para gerar o executavel estao neste repositorio. O download pronto para uso fica em **Releases**, separado do codigo-fonte.
